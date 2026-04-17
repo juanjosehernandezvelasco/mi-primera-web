@@ -156,7 +156,7 @@ footer {
 <header>
   <h1>Hola, soy Mbappé 🚀</h1>
   <p>Desarrollador frontend enfocado en crear páginas web modernas y funcionales</p>
-  <img src="img/Yo.jpeg" alt="Mi foto" class="foto">
+  <img src="Yo.jpeg" alt="Mi foto" class="foto">
 </header>
 
 <section class="animado">
