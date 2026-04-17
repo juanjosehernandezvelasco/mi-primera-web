@@ -2,12 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mbappé | Desarrollador Frontend</title>
+  <title>Juanjo | Desarrollador Frontend</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.3">
 
   <style>
-    body {
-      font-family: Arial;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
       background: #0f172a;
       color: white;
     }
@@ -18,21 +25,37 @@
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 42px;
+    }
+
+    p {
+      margin-top: 10px;
+      color: #cbd5f5;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
-    .proyecto {
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
       background: #1e293b;
-      margin: 20px auto;
       padding: 20px;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
+      border-radius: 12px;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     .btn {
@@ -41,14 +64,16 @@
       padding: 10px 20px;
       background: #38bdf8;
       color: black;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       background: #020617;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -57,34 +82,40 @@
 
 <header>
   <h1>Hola, soy Mbappé 🚀</h1>
-  <p>Desarrollador Frontend en formación</p>
+  <p>Desarrollador frontend enfocado en crear páginas web modernas y funcionales</p>
 </header>
 
 <section>
   <h2>Sobre mí</h2>
-  <p>Soy un desarrollador en formación enfocado en crear páginas web modernas, rápidas y funcionales. Actualmente estoy construyendo proyectos para trabajar como freelancer.</p>
+  <p>Estoy construyendo proyectos reales para trabajar como freelancer. Me enfoco en crear sitios web rápidos, limpios y funcionales.</p>
 </section>
 
 <section>
   <h2>Proyectos</h2>
 
-  <div class="proyecto">
-    <h3>Mi primera página web</h3>
-    <p>Desarrollada con HTML y CSS. Proyecto en constante mejora.</p>
+  <div class="contenedor">
+
+    <div class="card">
+      <h3>Página personal</h3>
+      <p>Mi primera web desarrollada con HTML y CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>Proyecto en progreso</h3>
+      <p>Próximamente más proyectos con mejor diseño y funcionalidades.</p>
+    </div>
+
   </div>
 
 </section>
 
 <section>
   <h2>Contacto</h2>
+  <p>Disponible para trabajos freelance</p>
 
-  <p>📧 juanjosehernandezvelasco11@gmail.com</p>
-
-  <!-- CAMBIA ESTE NÚMERO POR EL TUYO -->
   <a class="btn" href="https://wa.me/573188522236" target="_blank">
     Escríbeme por WhatsApp
   </a>
-
 </section>
 
 <footer>
